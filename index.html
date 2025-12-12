@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CI/CD Demo — Static Page</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <h1>CI/CD Demo: Static Site</h1>
+        <p class="tagline">A minimal static page to demonstrate CI/CD pipeline automation.</p>
+        <div class="badges">
+          <!-- Replace with your actual workflow status badge when available -->
+          <img src="https://img.shields.io/badge/build-pending-lightgrey" alt="build status" />
+        </div>
+      </div>
+    </header>
+
+    <main class="container">
+      <section>
+        <h2>Purpose</h2>
+        <p>
+          This static page is intended as a simple artifact for continuous integration
+          and continuous deployment pipelines. It is small and deterministic so that
+          CI jobs can build, test, and deploy it quickly.
+        </p>
+      </section>
+
+      <section>
+        <h2>Preview locally</h2>
+        <p>Run a simple local web server to preview this site:</p>
+        <pre><code># In PowerShell
+python -m http.server 8000
+# then open http://localhost:8000 in your browser
+        </code></pre>
+      </section>
+
+      <section class="preview">
+        <h2>Example Content</h2>
+        <div class="card">This is static content — pipelines can build &amp; deploy this file.</div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">Made for CI/CD Demo</div>
+    </footer>
+  </body>
+</html>
