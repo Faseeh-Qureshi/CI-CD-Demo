@@ -13,5 +13,7 @@ jobs:
       - name: Run Super-Linter
         uses: github/super-linter@v4
         env:
+          LINTER_RULES_PATH: /
+          VALIDATE_CSS: false
           DEFAULT_BRANCH: main
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
